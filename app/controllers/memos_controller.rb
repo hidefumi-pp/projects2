@@ -1,4 +1,6 @@
 class MemosController < ApplicationController
+	before_action :authenticate_user!
+	
 	def index
 		# トップページが呼ばれた時に動作するアクション
 		@memos = Memo.all
