@@ -31,8 +31,10 @@
                     <li><a href="/categories/<%=category.id%>"><%= category.name %></a></li>
                     <% end %>
                      <% else %>
-                       <%= link_to 'ユーザー登録', new_user_registration_path %>
-                       <%= link_to 'ログイン', new_user_session_path %>
+                     <div class="links">
+                       <%= link_to 'ユーザー登録', new_user_registration_path,class:"btn btn-default" %>
+                       <%= link_to 'ログイン', new_user_session_path,class:"btn btn-default" %>
+                      </div>
                      <% end %>
                   </ul>
                 </li>
